@@ -78,17 +78,42 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "আদর্শ মানিক নার্সারী — ৮০০+ প্রজাতির প্রিমিয়াম গাছ | Adarsh Manik Nursery" },
-      { name: "description", content: "Bangladesh's premium plant nursery with 800+ rare fruit, flower, and ornamental plant varieties. Nationwide safe delivery." },
-      { property: "og:title", content: "Adarsh Manik Nursery — 800+ Premium Plant Varieties" },
-      { property: "og:description", content: "Premium plant nursery with 800+ varieties. Nationwide delivery across Bangladesh." },
+      { title: "Adarsh Manik Nursery | Premium Plants in Bangladesh" },
+      {
+        name: "description",
+        content:
+          "Bangladesh's premium plant nursery with 800+ rare fruit, flower, and ornamental plant varieties. Nationwide safe delivery.",
+      },
+      {
+        property: "og:title",
+        content: "Adarsh Manik Nursery | Premium Plants in Bangladesh",
+      },
+      {
+        property: "og:description",
+        content:
+          "Premium plant nursery with 800+ varieties. Nationwide delivery across Bangladesh.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Adarsh Manik Nursery" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "theme-color", content: "#1f4d36" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png",
+      },
+      { rel: "manifest", href: "/site.webmanifest" },
     ],
   }),
   shellComponent: RootShell,
